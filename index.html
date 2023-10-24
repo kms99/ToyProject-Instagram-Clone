@@ -1,47 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <header>
-            <div class="titleToggle">
-                <div class="title">
-                    <img src="./image/logo.svg" >
-                    <img src="./image/logoArrow.svg" class="toggleImage">
-                </div>
-                <div class="toggleMenu" id="toggleMenu">
-                    <div class="following">
-                        <span>팔로잉</span>
-                        <img src="./image/togglePerson.svg">
-                    </div>
-                    <div class="favorites">
-                        <span>즐겨찾기</span>
-                        <img src="./image/toggleStar.svg">
-                    </div>
-                </div>
+      <header>
+        <div class="titleToggle">
+          <div class="title">
+            <img src="./image/logo.svg" />
+            <img src="./image/logoArrow.svg" class="toggleImage" />
+          </div>
+          <div class="toggleMenu" id="toggleMenu">
+            <div class="following">
+              <span>팔로잉</span>
+              <img src="./image/togglePerson.svg" />
             </div>
-
-            <div class="searchContainer">
-                <img src="./image/search.svg" id="searchIcon" class="searchIcon">
-                <input type="text" class="searchInput" placeholder="검색">
-                <img src="./image/inputDelete.svg" class="inputClearBtn hidden">
+            <div class="favorites">
+              <span>즐겨찾기</span>
+              <img src="./image/toggleStar.svg" />
             </div>
+          </div>
+        </div>
 
-            <div class="heartArea">
-                <img src="./image/emptyHeart.svg" class="heartBtn">
-            </div>
-        </header>
+        <div class="searchContainer">
+          <img src="./image/search.svg" id="searchIcon" class="searchIcon" />
+          <input type="text" class="searchInput" placeholder="검색" />
+          <img src="./image/inputDelete.svg" class="inputClearBtn hidden" />
+        </div>
 
-        <main>
-        </main>
+        <div class="heartArea">
+          <img src="./image/emptyHeart.svg" class="heartBtn" />
+        </div>
+      </header>
 
-        <footer></footer>
+      <main></main>
+
+      <footer>
+        <ul class="main-footer__lists">
+          <li class="main-footer__list">
+            <figure><img src="./image/footer_home.svg" /></figure>
+          </li>
+          <li class="main-footer__list">
+            <figure><img src="./image/footer_compass.svg" /></figure>
+          </li>
+          <li class="main-footer__list">
+            <figure><img src="./image/footer_video.svg" /></figure>
+          </li>
+          <li class="main-footer__list">
+            <figure><img src="./image/footer_add.svg" /></figure>
+          </li>
+          <li class="main-footer__list">
+            <figure><img src="./image/footer_dm.svg" /></figure>
+          </li>
+          <li class="main-footer__list">
+            <figure><img src="./image/footer_user.svg" /></figure>
+          </li>
+        </ul>
+      </footer>
     </div>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
