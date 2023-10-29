@@ -20,7 +20,7 @@ html {
 }
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -159,17 +159,18 @@ header {
 }
 
 main {
-  position: absolute;
+  position: fixed;
   top: 6rem;
   left: 0;
   right: 0;
-  bottom: 5rem;
+  bottom: 6rem;
   /* background: white; */
   box-sizing: border-box;
+  overflow-y: scroll;
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
@@ -195,7 +196,7 @@ footer {
 
 .slides-container {
   margin: 2rem auto;
-  width: 80%;
+  width: 63rem;
   overflow: hidden;
 }
 .slides {
@@ -208,7 +209,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 0.9rem;
+  margin: 0 0.6rem;
 }
 
 .userImg {
@@ -238,6 +239,152 @@ footer {
   justify-content: center;
 }
 
+.cards-container {
+  width: 47rem;
+  margin: auto;
+}
+.cards {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+.card {
+  border-bottom: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  padding-bottom: 2rem;
+}
+
+.card + .card {
+  margin-top: 2rem;
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.user-name {
+  font-weight: bold;
+}
+
+.card-header__userImage {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 4.2rem;
+  height: 4.2rem;
+  border: 2px solid transparent;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(to right, red 0%, orange 100%);
+  background-origin: border-box;
+  box-sizing: border-box;
+  background-clip: content-box, border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.card-header__userImage figure {
+  border-radius: 50%;
+  width: 3.2rem;
+  height: 3.2rem;
+  background: #dbdbdb;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-header__userImage figure img {
+  zoom: 0.5;
+}
+
+.card-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.card-menu figure {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.imageCarouselcontainer {
+  /* overflow: hidden; */
+}
+.imageCarousel {
+  width: 47rem;
+  display: flex;
+  overflow: hidden;
+}
+.imageCarousel img {
+  width: 47rem;
+  height: 59rem;
+}
+
+.card-footer__first-line {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.card-footer__first-line figure {
+  margin: 2rem 1rem 2rem 0;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.card-footer__first-line figure {
+  margin: 2rem 1.5rem 1rem 0;
+}
+.card-footer__first-line figure.book-mark {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-right: 0;
+}
+.good-count {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.context {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.context__userName {
+  font-weight: bold;
+}
+.show-comments {
+  margin-bottom: 1rem;
+}
+.show-comments a {
+  text-decoration: none;
+  color: #737373;
+  font-size: 1.4rem;
+}
+.input-comments fieldset {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.4rem;
+}
+.input-comments input {
+  outline: none;
+  border: none;
+  height: 1.6rem;
+}
+.input-comments figure {
+  margin: 0;
+}
 @media screen and (max-width: 770px) {
   .wrapper {
     width: 100%;
