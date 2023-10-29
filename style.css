@@ -188,15 +188,21 @@ footer {
   align-items: center;
   justify-content: space-around;
   margin: 0;
-  padding: 0;
+  padding: 1rem 0;
+  box-sizing: border-box;
 }
 .main-footer__list {
   cursor: pointer;
 }
 
+.main-footer__list figure {
+  margin: 0;
+}
+
 .slides-container {
   margin: 2rem auto;
-  width: 63rem;
+  width: 80%;
+  max-width: 55rem;
   overflow: hidden;
 }
 .slides {
@@ -313,10 +319,8 @@ footer {
   align-items: center;
   margin: 0;
 }
-.imageCarouselcontainer {
-  /* overflow: hidden; */
-}
 .imageCarousel {
+  margin: auto;
   width: 47rem;
   display: flex;
   overflow: hidden;
@@ -388,5 +392,16 @@ footer {
 @media screen and (max-width: 770px) {
   .wrapper {
     width: 100%;
+  }
+
+  .cards-container {
+    width: 35rem;
+  }
+  .imageCarousel {
+    width: 35rem;
+  }
+  .imageCarousel img {
+    width: 35rem;
+    height: auto;
   }
 }
